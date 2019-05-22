@@ -10,7 +10,7 @@ import { Swatch, SwatchResolver } from "./common";
 import { DesignSystem } from "../../design-system";
 import { accentPalette, backgroundColor, neutralPalette } from "../design-system";
 
-const targetRatio: number = 5.5;
+const targetRatio: number = 4.5;
 const neutralContrast: SwatchResolver = swatchByContrast(backgroundColor)(neutralPalette)(
     (referenceColor: string, palette: Palette, designSystem: DesignSystem): number =>
         findClosestSwatchIndex(PaletteType.neutral, referenceColor)(designSystem)
